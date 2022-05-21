@@ -12,7 +12,7 @@ Also ensure rust is installed by following instructions [here for Windows/Linux]
 
 ```yaml
 -   repo: https://github.com/UCSolarCarTeam/Solar-Car-Pre-commit
-    rev: master
+    rev: # tag e.g. v.0.1.0
     hooks:
     -   id: hook-name
 ```
@@ -21,8 +21,19 @@ Also ensure rust is installed by following instructions [here for Windows/Linux]
 
 ### Commit message validator
 
+To use this commit hook, add the following to your `.pre-commit-config.yaml`.
 ```yaml
     hooks:
     -   id: solar-car-commit-msg
         stages: [commit-msg]
 ```
+
+This pre-commit hooks verifies that the commit message follows the solar car commit message guideline.
+Commit messages must begin with an SFT-XXX tag and be followed by a short description of the commit.
+Commit messages must be between 20 and 72 characters.
+
+| Example commit message                                                  | Hook result |
+| ----------------------------------------------------------------------- | ----------- |
+| SFT-1 Commit message                                                    | ✓ Pass     |
+| Commit message                                                          | ✕ Fail     |
+| This commit message is waaaaaayyyyyy tooooooooooooooooo longggggggggggg | ✕ Fail            |

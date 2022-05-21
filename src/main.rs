@@ -22,7 +22,7 @@ fn validate_commit_message(commit_message: &str) -> i8 {
     // Check if commit message has lines over 72 characters long
     let mut lines = commit_message.lines();
     while let Some(line) = lines.next() {
-        if line.len() > 72 {
+        if line.len() > 72 || line.len() < 20 {
             println!("Commit message must not have lines over 72 characters long");
             is_valid = 1;
         }
