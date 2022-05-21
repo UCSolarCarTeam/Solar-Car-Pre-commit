@@ -11,7 +11,6 @@ To use this pre-commit hook in your repo, add the following to your `.pre-commit
 Also ensure rust is installed by following instructions [here for Windows/Linux](https://www.rust-lang.org/tools/install) and [here for MacOS](https://sourabhbajaj.com/mac-setup/Rust/).
 
 ```yaml
-repos:
 -   repo: https://github.com/UCSolarCarTeam/Solar-Car-Pre-commit
     rev: master
     hooks:
@@ -25,4 +24,5 @@ repos:
 ```yaml
     hooks:
     -   id: solar-car-commit-msg
+        stages: [commit-msg]
 ```
