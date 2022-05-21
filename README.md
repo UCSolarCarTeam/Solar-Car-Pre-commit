@@ -16,6 +16,19 @@ Also ensure rust is installed by following instructions [here for Windows/Linux]
     hooks:
     -   id: hook-name
 ```
+## Recommended hooks
+
+These are the recommended pre-commit hooks to be used.
+
+```yaml
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+    -   id: mixed-line-ending
+```
 
 ## Hooks
 
