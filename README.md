@@ -8,9 +8,11 @@ Ensure that you have installed pre-commit following the instructions [here](http
 
 To use this pre-commit hook in your repo, add the following to your `.pre-commit-config.yaml` file.
 
+Also ensure rust is installed by following instructions [here for Windows/Linux](https://www.rust-lang.org/tools/install) and [here for MacOS](https://sourabhbajaj.com/mac-setup/Rust/).
+
 ```yaml
 repos:
--   repo: #TO-DO: update this url
+-   repo: https://github.com/UCSolarCarTeam/Solar-Car-Pre-commit
     rev: master
     hooks:
     -   id: hook-name
