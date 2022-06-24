@@ -12,7 +12,7 @@ Also ensure rust is installed by following instructions [here for Windows/Linux]
 
 ```yaml
 -   repo: https://github.com/UCSolarCarTeam/Solar-Car-Pre-commit
-    rev: # tag e.g. v.0.1.0
+    rev: # tag e.g. v1.0.0
     hooks:
     -   id: hook-name
 ```

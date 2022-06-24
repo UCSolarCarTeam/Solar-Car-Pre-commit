@@ -2,5 +2,3 @@
   name: Solar Car Commit Message Validator
   entry: check_commit_msg
   language: rust
-  stages:
-  - commit-msg
