@@ -12,7 +12,7 @@ Also ensure rust is installed by following instructions [here for Windows/Linux]
 
 ```yaml
 -   repo: https://github.com/UCSolarCarTeam/Solar-Car-Pre-commit
-    rev: # tag e.g. v.0.1.0
+    rev: # tag e.g. v1.0.0
     hooks:
     -   id: hook-name
 ```
@@ -38,7 +38,6 @@ To use this commit hook, add the following to your `.pre-commit-config.yaml`.
 ```yaml
     hooks:
     -   id: solar-car-commit-msg
-        stages: [commit-msg]
 ```
 
 This pre-commit hooks verifies that the commit message follows the solar car commit message guideline.
