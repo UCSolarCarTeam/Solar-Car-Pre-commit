@@ -38,7 +38,7 @@ To use this commit hook, add the following to your `.pre-commit-config.yaml`.
 ```yaml
     hooks:
     -   id: solar-car-commit-msg
-        stages: [post-commit]
+        stages: [commit-msg]
 ```
 
 This pre-commit hooks verifies that the commit message follows the solar car commit message guideline.
